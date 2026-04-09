@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodinné Vinařství Sedlák</title>
+    <!-- Moderní Google Font pro eleganci (Playfair) a čitelnost (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Hlavní zafixovaný obal (řídí celou výšku stránky pro vertikální scrollování) -->
+        <main class="scroll-container">
+            <!-- Pás, který se plynule posouvá doprava pomocí GSAP -->
+            <div class="horizontal-wrapper">
+                
+                <!-- SCÉNA 1: Úvod a logo -->
+                <section class="scene" id="scene-1">
+                    <!-- data-speed určuje hloubku. Pozadí (čím nižší číslo, tím hlouběji/pomaleji jede) -->
+                    <div class="layer layer-bg asset-1-3" data-speed="0.3">
+                        <img src="images/1_3 Pálava.png" alt="Pálava pozadí">
+                    </div>
+                    <div class="layer layer-mid asset-1-2" data-speed="1.4">
+                        <img src="images/1_2 vinohrady.png" alt="Vinohrady">
+                    </div>
+                    
+                    <!-- KOTVA (speed: 1 = skoro nulový horizontální posun při scrollu) -->
+                    <div class="layer layer-fg asset-1-1" data-speed="1.0">
+                        <img src="images/1_1 Sedlák a kůň.png" alt="Sedlák a kůň">
+                    </div>
+                    
+                    <!-- Nápis SEDLÁK přemístěn Z-indexem / rychlý průlet popředím -->
+                    <div class="layer layer-text" data-speed="1.5" style="z-index: 50;">
+                        <div class="hero-text">
+                            <span class="subtitle">RODINNÉ VINAŘSTVÍ</span>
+                            <h1 class="main-title">SEDLÁK</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SCÉNA 2: Rod Sedláků (Kluci u vody) -->
+                <section class="scene" id="scene-2">
+                    <div class="layer layer-bg asset-2-3" data-speed="0.3">
+                        <img src="images/2_3 lyrické kopce.png" alt="Lyrické kopce">
+                    </div>
+                    <div class="layer layer-mid asset-2-2" data-speed="1.4">
+                        <img src="images/2_2 siluety stromů.png" alt="Siluety stromů">
+                    </div>
+                    <div class="layer layer-text text-layer-s2" data-speed="1.5">
+                        <div class="text-content text-s2">
+                            <h2>Rod Sedláků</h2>
+                            <p class="lead">hospodaří na vlastních vinicích už po čtyři generace.</p>
+                            <p>Oráč s pluhem a koněm není nikdo jiný, než praděda Jméno. Stařečci měli hospodářství, plno zvířectva a polností. Děti byly ještě malé a tak v hospodářství koně udělali velkou službu. Jak děti rostli, zapojovali se více a tady už příběhy známe z jejich vyprávění.</p>
+                        </div>
+                    </div>
+                    <div class="layer layer-fg asset-2-1" data-speed="1.0">
+                        <img src="images/2_1 kluci a voda.png" alt="Kluci a voda">
+                    </div>
+                </section>
+
+                <!-- SCÉNA 3: Vína a terroir (Stromy) -->
+                <section class="scene" id="scene-3">
+                    <div class="layer layer-bg asset-3-3" data-speed="0.3">
+                        <img src="images/3_3 stromy horizont.png" alt="Horizont stromů">
+                    </div>
+                    <div class="layer layer-mid asset-3-2" data-speed="1.4">
+                        <img src="images/3_2 stromy větší.png" alt="Stromy větší">
+                    </div>
+                    <div class="layer layer-text text-layer-s3" data-speed="1.5">
+                        <div class="text-content text-s3">
+                            <h2>Vína a terroir</h2>
+                            <p>Našim předkům vždy pomáhali v práci koně a sedlák s koněm se proto stal i naším symbolem. Znamená pro nás poctivost v přístupu k vínům i lidem.</p>
+                            <p>Naše vína jsou z odrůd typických pro naši oblast a hroznů zdejších vinic. Díky našim předchůdcům jim rozumíme a díky našim zákazníkům je děláme s pochopením pro současného milovníka vín.</p>
+                            <p>Předky ctíme napříč víny, ale i etiketami.</p>
+                        </div>
+                    </div>
+                    <div class="layer layer-fg asset-3-1" data-speed="1.0">
+                        <img src="images/3_1 kluci jaro.png" alt="Kluci jaro">
+                    </div>
+                </section>
+
+                <!-- SCÉNA 4: Kontakt (Vůz do kopce) -->
+                <section class="scene" id="scene-4">
+                    <div class="layer layer-bg asset-4-2" data-speed="0.3">
+                        <img src="images/4_2 kopce.png" alt="Kopce v dálce">
+                    </div>
+                    <div class="layer layer-text text-layer-s4" data-speed="1.5">
+                         <div class="contact-wrapper contact-centered">
+                             <div class="contact-columns">
+                                <div class="contact-column">
+                                    <p class="contact-title">Rodinné vinařství Sedlák</p>
+                                    <p>Svárov 14</p>
+                                    <p>691 02 Velké Bílovice</p>
+                                </div>
+                                <div class="contact-column">
+                                    <p class="contact-title">Provozovna</p>
+                                    <p>Fabián 1494</p>
+                                    <p>691 02 Velké Bílovice</p>
+                                </div>
+                                <div class="contact-column">
+                                    <p class="contact-title">Provozní doba</p>
+                                    <p>Pondělí–pátek 7.30–15.30</p>
+                                    <p>Sobota–neděle zavřeno</p>
+                                </div>
+                            </div>
+                            <div class="contact-footer">
+                                 <p>Milan Sedlák & Jaroslav Sedlák</p>
+                                 <p>info@vinarstvosedlak.cz</p>
+                            </div>
+                         </div>
+                    </div>
+                    <!-- Tato vrstva půjde hodně do popředí a rychle -->
+                    <div class="layer layer-fg asset-4-1" data-speed="1.3">
+                        <img src="images/4_1 Sedlák.png" alt="Sedlák ve voze">
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Natažení knihoven GSAP a ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Inicializace našeho kódu -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -91,8 +91,8 @@ h2 {
 /* DESIGN PRO SCÉNU 1: ÚVOD */
 .hero-text {
     position: absolute;
-    left: 17.4%;
-    top: 30%;
+    left: 10%;
+    top: 35%;
     transform: none; /* Zrušení centering posunů, natvrdo usazeno zadáním */
     transform-origin: top left;
     text-align: left;
@@ -180,46 +180,46 @@ h2 {
 /* SCÉNA 1 */
 .asset-1-1 img {
     position: absolute;
-    left: 17%;
-    top: 25%;
-    transform: scale(0.65); /* zachovávám původní default scale */
+    left: 4%;
+    top: 30%;
+    transform: scale(0.85); /* Větší kůň, aby seděl pod obrovským nadpisem */
     transform-origin: top left;
 }
 .asset-1-2 img {
     position: absolute;
-    left: 25%;
-    top: 1%;
-    transform: scale(0.7);
+    left: 18%;
+    top: 25%;
+    transform: scale(0.85); /* Vinohrady natahující se doprava */
     transform-origin: top left;
 }
 .asset-1-3 img {
     position: absolute;
-    left: 25%;
-    top: -30%; /* Přesah nad okraj obrazovky */
-    transform: scale(0.8);
-    transform-origin: top left; /* Sjednoceno na absolutní počátek pro přesnost mřížky */
+    left: 5%;
+    top: -5%; /* Pálava vysoká dominanta */
+    transform: scale(1.0);
+    transform-origin: top left; 
 }
 
 /* SCÉNA 2 */
 .asset-2-1 img {
     position: absolute;
     left: 42%;
-    top: 21%;
-    transform: scale(0.3);
+    top: 48%;
+    transform: scale(0.35); /* Modří koníci trochu níže a větší */
     transform-origin: top left;
 }
 .asset-2-2 img {
     position: absolute;
-    left: 24.9%;
-    top: 1%;
-    transform: scale(0.5);
+    left: 20%;
+    top: 25%;
+    transform: scale(0.7); /* Siluety stromků */
     transform-origin: top left;
 }
 .asset-2-3 img {
     position: absolute;
-    left: 30%;
-    top: -2%;
-    transform: scale(0.6);
+    left: 35%;
+    top: 35%;
+    transform: scale(0.8); /* Světllý background kolem koníků */
     transform-origin: top left;
 }
 
@@ -229,8 +229,8 @@ h2 {
 }
 .text-s2 {
     position: absolute;
-    left: 15%; 
-    top: 23%;
+    left: 10%; 
+    top: 25%;
     transform: none;
     transform-origin: top left;
     max-width: 480px;
@@ -239,23 +239,23 @@ h2 {
 /* SCÉNA 3 */
 .asset-3-1 img {
     position: absolute;
-    left: 37.9%;
-    top: 45%;
-    transform: scale(0.4);
+    left: 50%;
+    top: 52%;
+    transform: scale(0.4); /* Zelení koníci */
     transform-origin: top left;
 }
 .asset-3-2 img {
     position: absolute;
-    left: 40%;
-    top: 20%;
-    transform: scale(0.6);
+    left: 62%;
+    top: 35%;
+    transform: scale(0.65); /* Zelené stromy kolem */
     transform-origin: top left;
 }
 .asset-3-3 img {
     position: absolute;
-    left: 15%;
-    top: 20%;
-    transform: scale(0.4);
+    left: 35%;
+    top: 40%;
+    transform: scale(0.5); /* Pozadí se stromy */
     transform-origin: top left;
 }
 
@@ -265,8 +265,8 @@ h2 {
 }
 .text-s3 {
     position: absolute;
-    left: 10%; 
-    top: 19.5%;
+    left: 12%; 
+    top: 25%;
     transform: none;
     transform-origin: top left;
 }
@@ -274,26 +274,24 @@ h2 {
 /* SCÉNA 4 */
 .asset-4-1 img {
     position: absolute;
-    left: 75%;
-    top: 15%;
-    /* Zmenšení o 25% (0.35 původní scale -> 0.35 * 0.75 = 0.26) */
-    transform: scale(0.26);
+    left: 60%;
+    top: 30%;
+    transform: scale(0.35); /* Vůz ve finále scény */
     transform-origin: top left;
 }
 .asset-4-2 img {
     position: absolute;
-    left: 49.8%;
-    top: -30%; /* Přesah povolen díky flexibilnímu kontejneru a overflow: visible u .scene */
-    /* Zvětšení o 25% (0.575 původní scale -> 0.575 * 1.25 = 0.72) */
-    transform: scale(0.72);
+    left: 42%;
+    top: 20%; 
+    transform: scale(0.9); /* Podkladové kopce k vozu */
     transform-origin: top left;
 }
 
 /* Kontakt o 25% větší podle zadání */
 .contact-centered {
     position: absolute;
-    left: 36%;
-    top: 35%;
+    left: 8%;
+    top: 45%;
     /* Zvětšení fontu a boxu celku kontaktů o 25% */
     transform: scale(1.25); 
     transform-origin: top left;
